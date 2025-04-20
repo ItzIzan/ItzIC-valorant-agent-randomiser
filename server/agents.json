@@ -1,0 +1,133 @@
+[
+    {
+      "name": "Jett",
+      "role": "duelist",
+      "image": "/images/jett.png"
+    },
+    {
+      "name": "Phoenix",
+      "role": "duelist",
+      "image": "/images/phoenix.png"
+    },
+    {
+      "name": "Reyna",
+      "role": "duelist",
+      "image": "/images/reyna.png"
+    },
+    {
+      "name": "Raze",
+      "role": "duelist",
+      "image": "/images/raze.png"
+    },
+    {
+      "name": "Yoru",
+      "role": "duelist",
+      "image": "/images/yoru.png"
+    },
+    {
+      "name": "Neon",
+      "role": "duelist",
+      "image": "/images/neon.png"
+    },
+    {
+      "name": "Iso",
+      "role": "duelist",
+      "image": "/images/iso.png"
+    },
+    {
+        "name": "Waylay",
+        "role": "duelist",
+        "image": "/images/waylayS.png"
+      },
+    {
+      "name": "Brimstone",
+      "role": "controller",
+      "image": "/images/brimstone.png"
+    },
+    {
+      "name": "Omen",
+      "role": "controller",
+      "image": "/images/omen.png"
+    },
+    {
+      "name": "Viper",
+      "role": "controller",
+      "image": "/images/viper.png"
+    },
+    {
+      "name": "Astra",
+      "role": "controller",
+      "image": "/images/astra.png"
+    },
+    {
+      "name": "Harbor",
+      "role": "controller",
+      "image": "/images/harbor.png"
+    },
+    {
+      "name": "Clove",
+      "role": "controller",
+      "image": "/images/clove.png"
+    },
+    {
+      "name": "Sova",
+      "role": "initiator",
+      "image": "/images/sova.png"
+    },
+    {
+      "name": "Skye",
+      "role": "initiator",
+      "image": "/images/skye.png"
+    },
+    {
+      "name": "Breach",
+      "role": "initiator",
+      "image": "/images/breach.png"
+    },
+    {
+      "name": "KAY/O",
+      "role": "initiator",
+      "image": "/images/kayo.png"
+    },
+    {
+      "name": "Fade",
+      "role": "initiator",
+      "image": "/images/fade.png"
+    },
+    {
+      "name": "Gekko",
+      "role": "initiator",
+      "image": "/images/gekko.png"
+    },
+    {
+      "name": "Cypher",
+      "role": "sentinel",
+      "image": "/images/cypher.png"
+    },
+    {
+      "name": "Killjoy",
+      "role": "sentinel",
+      "image": "/images/killjoy.png"
+    },
+    {
+      "name": "Sage",
+      "role": "sentinel",
+      "image": "/images/sage.png"
+    },
+    {
+      "name": "Chamber",
+      "role": "sentinel",
+      "image": "/images/chamber.png"
+    },
+    {
+        "name": "Vyse",
+        "role": "sentinel",
+        "image": "/images/vyse.png"
+      },
+    {
+      "name": "Deadlock",
+      "role": "sentinel",
+      "image": "/images/deadlock.png"
+    }
+  ]
+  
