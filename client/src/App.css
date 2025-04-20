@@ -1,0 +1,46 @@
+.App {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2rem;
+  }
+  
+  .roles button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ccc;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .roles button.selected {
+    background: #f04f4f;
+    color: white;
+    border-color: #f04f4f;
+  }
+  
+  .randomise {
+    margin-top: 1rem;
+    padding: 0.7rem 2rem;
+    font-weight: bold;
+    background: #4f7cf0;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 1rem;
+  }
+  
+  .agent-card {
+    margin-top: 2rem;
+  }
+  
+  .agent-card img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  
