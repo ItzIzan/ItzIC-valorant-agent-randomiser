@@ -7,6 +7,7 @@ function App() {
   const [selectedRoles, setSelectedRoles] = useState([]);
   const [agent, setAgent] = useState(null);
   const [error, setError] = useState('');
+  const [bannedAgents, setBannedAgents] = useState([]); // New state for banned agents
 
   const toggleRole = (role) => {
     setSelectedRoles(prev =>
@@ -30,12 +31,25 @@ function App() {
         throw new Error(errorData.error || 'Something went wrong');
       }
       const data = await response.json();
-      setAgent(data);
-      setError('');
+      if (bannedAgents.includes(data.name)) {
+        setError('This agent is banned! Pick another one.');
+        setAgent(null);
+      } else {
+        setAgent(data);
+        setError('');
+      }
     } catch (err) {
       setAgent(null);
       setError(err.message);
     }
+  };
+
+  const handleBanAgent = (agentName) => {
+    setBannedAgents((prevBanned) => [...prevBanned, agentName]);
+  };
+
+  const resetBannedList = () => {
+    setBannedAgents([]); // Reset the banned agents list
   };
 
   return (
@@ -63,8 +77,19 @@ function App() {
           <h2>{agent.name}</h2>
           <p>{agent.role.charAt(0).toUpperCase() + agent.role.slice(1)}</p>
           <img src={agent.image} alt={agent.name} />
+          <button onClick={() => handleBanAgent(agent.name)}>Ban this agent</button>
         </div>
       )}
+
+      <div className="banned-agents">
+        <h3>Banned Agents</h3>
+        <ul>
+          {bannedAgents.map(agent => (
+            <li key={agent}>{agent}</li>
+          ))}
+        </ul>
+        <button className="reset-banned" onClick={resetBannedList}>Reset Banned List</button>
+      </div>
     </div>
   );
 }
